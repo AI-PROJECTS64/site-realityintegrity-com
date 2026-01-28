@@ -1,0 +1,450 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RealityIntegrity.com - Reality Integrity</title>
+  <meta name="description" content="Vendor-neutral reference for preserving and verifying the integrity of reality signals and representations across AI media, sensors and decisions." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://www.realityintegrity.com/" />
+  <link rel="alternate" hreflang="en" href="https://www.realityintegrity.com/" />
+  <link rel="alternate" hreflang="fr" href="https://www.realityintegrity.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Reality Integrity - Reference for authentic reality signals" />
+  <meta property="og:description" content="Vendor-neutral reference for preserving and verifying the integrity of reality signals and representations across AI media, sensors and decisions." />
+  <meta property="og:url" content="https://www.realityintegrity.com/" />
+  <meta property="og:image" content="https://www.realityintegrity.com/og.jpg.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reality Integrity - Reference for authentic reality signals" />
+  <meta name="twitter:description" content="Vendor-neutral reference for preserving and verifying the integrity of reality signals and representations across AI media, sensors and decisions." />
+  <meta name="twitter:image" content="https://www.realityintegrity.com/og.jpg.png" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"RealityIntegrity.com",
+    "url":"https://www.realityintegrity.com/",
+    "inLanguage":["en","fr"],
+    "description":"Independent, vendor-neutral reference for preserving and verifying the integrity of reality signals and representations across synthetic media, sensors, logs, and automated decisions.",
+    "publisher":{
+      "@type":"Organization",
+      "name":"RealityIntegrity.com (independent reference)",
+      "url":"https://www.realityintegrity.com/",
+      "contactPoint":{
+        "@type":"ContactPoint",
+        "contactType":"stewardship",
+        "email":"contact@realityintegrity.com"
+      }
+    },
+    "potentialAction":{
+      "@type":"CommunicateAction",
+      "target":"mailto:contact@realityintegrity.com?subject=RealityIntegrity.com%20-%20Stewardship%20or%20acquisition%20inquiry"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#071022;
+      --card:#0b1830;
+      --card2:#091429;
+      --text:#e9eef9;
+      --muted:#a9b7d6;
+      --accent:#66f0ff;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 16px 50px rgba(0,0,0,.40);
+      --radius: 16px;
+      --max: 980px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(102,240,255,.10), transparent 60%),
+                  radial-gradient(1200px 800px at 90% 30%, rgba(133,113,255,.10), transparent 55%),
+                  var(--bg);
+    }
+    a{color:inherit;}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 44px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      position:sticky; top:12px; backdrop-filter: blur(8px);
+    }
+    .brand{display:flex; align-items:center; gap:12px; min-width:0;}
+    .mark{
+      width:36px; height:36px; border-radius:10px;
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      object-fit:contain;
+    }
+    .domain{font-weight:700; letter-spacing:.2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+    .badge{
+      display:inline-block;
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--line);
+      padding:4px 8px;
+      border-radius:999px;
+      margin-top:4px;
+      background: rgba(0,0,0,.12);
+    }
+    .lang{display:flex; gap:8px; flex-shrink:0;}
+    .btn{
+      cursor:pointer;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.12);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:12px;
+      font-weight:650;
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      transition: transform .05s ease, border-color .15s ease, background .15s ease;
+      user-select:none;
+    }
+    .btn:hover{border-color: rgba(102,240,255,.35); background: rgba(102,240,255,.06);}
+    .btn:active{transform: translateY(1px);}
+    .btn.primary{
+      border-color: rgba(102,240,255,.40);
+      background: rgba(102,240,255,.10);
+    }
+    .btn.active{
+      border-color: rgba(102,240,255,.55);
+      background: rgba(102,240,255,.14);
+    }
+
+    .card{
+      margin-top:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-inner{padding:22px 18px;}
+    .section-tag{
+      display:inline-block;
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(0,0,0,.14);
+      margin-bottom:14px;
+    }
+    h1{margin:0 0 6px; font-size:34px; letter-spacing:-.4px;}
+    h2{margin:18px 0 8px; font-size:18px;}
+    p{margin:10px 0; line-height:1.55; color: rgba(233,238,249,.95);}
+    .lead{font-size:16px; color: rgba(233,238,249,.92);}
+    .muted{color:var(--muted);}
+    .rule{height:1px; background: var(--line); margin:18px 0;}
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin-top:12px;
+    }
+    @media (min-width: 860px){
+      .grid{grid-template-columns: 1fr 1fr;}
+    }
+    .panel{
+      border:1px solid var(--line);
+      border-radius: 14px;
+      padding:14px 14px;
+      background: rgba(0,0,0,.14);
+    }
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background: rgba(0,0,0,.14);
+      color:var(--text);
+      text-decoration:none;
+      font-family:var(--mono);
+      font-size:12px;
+      line-height:1;
+    }
+    .chip:hover{border-color: rgba(102,240,255,.35); background: rgba(102,240,255,.06);}
+    .docs{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    @media (min-width: 860px){
+      .docs{grid-template-columns: 1fr 1fr;}
+    }
+    .doc{
+      border:1px solid var(--line);
+      border-radius: 14px;
+      padding:14px 14px;
+      background: rgba(0,0,0,.14);
+    }
+    .doc h3{margin:0 0 8px; font-size:14px; font-family:var(--mono); color:var(--muted);}
+    .doc a{display:inline-flex; margin-right:10px; margin-top:8px;}
+    .foot{
+      margin-top:18px;
+      font-size:12.5px;
+      color:var(--muted);
+      line-height:1.55;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:14px 16px;
+      background: rgba(0,0,0,.12);
+    }
+    .foot strong{color: rgba(233,238,249,.92);}
+    [data-fr]{display:none;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <img class="mark" src="/logo-realityintegrity.png" alt="Reality Integrity logo" />
+        <div style="min-width:0">
+          <div class="domain">RealityIntegrity.com</div>
+          <div class="badge">Independent, descriptive category reference</div>
+        </div>
+      </div>
+      <div class="lang" aria-label="Language">
+        <button class="btn" id="btn-en" type="button" onclick="setLang('en')">EN</button>
+        <button class="btn" id="btn-fr" type="button" onclick="setLang('fr')">FR</button>
+      </div>
+    </div>
+
+    <!-- =================== HOME (EN) =================== -->
+    <section class="card" data-en>
+      <div class="card-inner">
+        <div class="section-tag">Home (EN)</div>
+        <h1>Reality Integrity</h1>
+        <p class="lead"><strong>Independent, vendor-neutral reference</strong> for preserving and verifying the integrity of reality signals and representations.</p>
+
+        <p>
+          Synthetic media and automated systems have made “seeing is believing” unreliable.
+          Reality integrity is the capability to preserve and verify what is authentic, what changed, and under which controls, across media, sensors, logs, and decisions.
+          This site provides definitions, a standards and policy landscape, governance considerations, and an evidence-oriented reference trail.
+        </p>
+
+        <div class="chips">
+          <a class="btn primary" href="mailto:contact@realityintegrity.com?subject=RealityIntegrity.com%20-%20Stewardship%20or%20acquisition%20inquiry">Contact (stewardship or acquisition)</a>
+          <a class="btn" href="/concept-note.html">Read concept note</a>
+        </div>
+
+        <div class="rule"></div>
+
+        <div class="grid">
+          <div class="panel">
+            <h2>What “Reality Integrity” means</h2>
+            <p>
+              Reality integrity is the property that a reality signal or representation remains trustworthy throughout its lifecycle: captured or produced, edited or transformed, transmitted, stored, and consumed for decisions.
+            </p>
+            <p class="muted">
+              <strong>Precision:</strong> Integrity is not “truth”. It is the verifiable state that content and provenance have not been altered beyond what is disclosed.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h2>Why it becomes non-optional</h2>
+            <p>
+              Regulatory transparency and provenance initiatives are converging with operational security needs.
+              Provenance standards are moving from specification to deployment, while public authorities and multilateral principles increasingly treat “integrity” as an institutional requirement for trust.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h2>Reality integrity is not a product</h2>
+            <p>
+              It is a cross-sector capability spanning provenance, disclosure, credentials, watermarking, and governance.
+              Solutions may differ, but the integrity objective is shared.
+            </p>
+            <p class="muted">
+              This site is not a certification body, not legal advice, and not an assurance service. It is a neutral reference and evidence base.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h2>Core building blocks</h2>
+            <p>
+              Provenance and credentials (cryptographically signed metadata), trust lists and certificate policies, durable provenance, and lifecycle preservation are typical components of integrity programs.
+              Detection can support investigations, but integrity is strengthened primarily by proactive provenance and disclosure.
+            </p>
+          </div>
+        </div>
+
+        <div class="rule"></div>
+
+        <h2>Key references</h2>
+        <div class="chips" aria-label="References">
+          <a class="chip" href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">EU: code of practice (marking and labelling)</a>
+          <a class="chip" href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener">EU AI Act: Article 50 (transparency)</a>
+          <a class="chip" href="https://c2pa.org/conformance/" target="_blank" rel="noopener">C2PA: conformance program</a>
+          <a class="chip" href="https://media.defense.gov/2025/Jan/29/2003634788/-1/-1/0/CSI-CONTENT-CREDENTIALS.PDF" target="_blank" rel="noopener">Guidance: Content Credentials (PDF)</a>
+          <a class="chip" href="https://www.esteri.it/wp-content/uploads/2024/06/un-global-principles-for-information-integrity-en.pdf" target="_blank" rel="noopener">UN: Global Principles for Information Integrity (PDF)</a>
+        </div>
+
+        <div class="rule"></div>
+
+        <h2>Downloads</h2>
+        <div class="docs">
+          <div class="doc">
+            <h3>Acquisition Brief (EN, PDF)</h3>
+            <div class="muted">File: Acquisition Brief realityintegrity-EN-202511.pdf</div>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-EN-202511.pdf" target="_blank" rel="noopener">Open</a>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-EN-202511.pdf" download="Acquisition-Brief-RealityIntegrity-EN-202511.pdf">Download</a>
+          </div>
+          <div class="doc">
+            <h3>Acquisition Brief (FR, PDF)</h3>
+            <div class="muted">File: Acquisition Brief realityintegrity-202511.pdf</div>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-202511.pdf" target="_blank" rel="noopener">Open</a>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-202511.pdf" download="Acquisition-Brief-RealityIntegrity-FR-202511.pdf">Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== HOME (FR) =================== -->
+    <section class="card" data-fr>
+      <div class="card-inner">
+        <div class="section-tag">Accueil (FR)</div>
+        <h1>Reality Integrity</h1>
+        <p class="lead"><strong>Référence indépendante et neutre</strong> pour préserver et vérifier l’intégrité de ce qui sert de “réalité” opérationnelle.</p>
+
+        <p>
+          Les contenus synthétiques et les systèmes automatisés rendent “voir pour croire” insuffisant.
+          Reality integrity désigne la capacité à préserver et vérifier ce qui est authentique, ce qui a changé, et sous quels contrôles, sur les médias, les capteurs, les logs et les décisions.
+          Ce site propose des définitions, un état de l’art standards et politiques publiques, et des repères de gouvernance, avec une approche orientée preuve.
+        </p>
+
+        <div class="chips">
+          <a class="btn primary" href="mailto:contact@realityintegrity.com?subject=RealityIntegrity.com%20-%20Demande%20de%20stewardship%20ou%20acquisition">Contact (stewardship ou acquisition)</a>
+          <a class="btn" href="/concept-note.html">Lire la concept note</a>
+        </div>
+
+        <div class="rule"></div>
+
+        <div class="grid">
+          <div class="panel">
+            <h2>Définition</h2>
+            <p>
+              Reality integrity est la propriété qu’un signal ou une représentation de la réalité reste digne de confiance tout au long de son cycle de vie : capture ou production, transformations, transmission, stockage, et consommation pour décision.
+            </p>
+            <p class="muted">
+              <strong>Précision:</strong> l’intégrité n’est pas “la vérité”. C’est l’état vérifiable que le contenu et sa provenance n’ont pas été altérés au-delà de ce qui est déclaré.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h2>Pourquoi ça devient non-optionnel</h2>
+            <p>
+              Les trajectoires de transparence et de provenance convergent avec des besoins de sécurité opérationnelle.
+              Les standards de provenance passent de la spécification au déploiement, et les autorités publiques ainsi que les principes multilatéraux stabilisent “integrity” comme exigence institutionnelle.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h2>Ce n’est pas un produit</h2>
+            <p>
+              C’est une capacité transversale qui recouvre provenance, disclosure, credentials, watermarking et gouvernance.
+              Les solutions varient, l’objectif d’intégrité reste commun.
+            </p>
+            <p class="muted">
+              Ce site ne certifie rien, ne fournit aucun conseil juridique, et ne propose aucun service d’assurance régulée. Il s’agit d’une référence neutre.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h2>Briques clés</h2>
+            <p>
+              Provenance et credentials (métadonnées signées), trust lists et politiques de certificats, durabilité de la provenance, et préservation du cycle de vie sont des composantes typiques.
+              La détection peut aider, mais l’intégrité se renforce surtout par des mécanismes proactifs de provenance et de disclosure.
+            </p>
+          </div>
+        </div>
+
+        <div class="rule"></div>
+
+        <h2>Références clés</h2>
+        <div class="chips" aria-label="References">
+          <a class="chip" href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">UE: code of practice (marquage et étiquetage)</a>
+          <a class="chip" href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener">UE AI Act: Article 50 (transparence)</a>
+          <a class="chip" href="https://c2pa.org/conformance/" target="_blank" rel="noopener">C2PA: programme de conformité</a>
+          <a class="chip" href="https://media.defense.gov/2025/Jan/29/2003634788/-1/-1/0/CSI-CONTENT-CREDENTIALS.PDF" target="_blank" rel="noopener">Guidance: Content Credentials (PDF)</a>
+          <a class="chip" href="https://www.esteri.it/wp-content/uploads/2024/06/un-global-principles-for-information-integrity-en.pdf" target="_blank" rel="noopener">ONU: principes globaux (PDF)</a>
+        </div>
+
+        <div class="rule"></div>
+
+        <h2>Téléchargements</h2>
+        <div class="docs">
+          <div class="doc">
+            <h3>Brief d’acquisition (EN, PDF)</h3>
+            <div class="muted">Fichier: Acquisition Brief realityintegrity-EN-202511.pdf</div>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-EN-202511.pdf" target="_blank" rel="noopener">Ouvrir</a>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-EN-202511.pdf" download="Acquisition-Brief-RealityIntegrity-EN-202511.pdf">Télécharger</a>
+          </div>
+          <div class="doc">
+            <h3>Brief d’acquisition (FR, PDF)</h3>
+            <div class="muted">Fichier: Acquisition Brief realityintegrity-202511.pdf</div>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-202511.pdf" target="_blank" rel="noopener">Ouvrir</a>
+            <a class="btn" href="/Acquisition%20Brief%20realityintegrity-202511.pdf" download="Acquisition-Brief-RealityIntegrity-FR-202511.pdf">Télécharger</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="foot">
+      <strong>Disclaimer.</strong> RealityIntegrity.com is an independent, vendor-neutral reference site. No certification. No legal advice. No regulated assurance services. No endorsement. No affiliation with any regulator, standards body, or vendor.
+      <br/>
+      For stewardship, research collaboration, or acquisition inquiries: <a href="mailto:contact@realityintegrity.com">contact@realityintegrity.com</a>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang){
+      var en = document.querySelectorAll("[data-en]");
+      var fr = document.querySelectorAll("[data-fr]");
+      for (var i=0;i<en.length;i++) en[i].style.display = (lang==="en") ? "" : "none";
+      for (var j=0;j<fr.length;j++) fr[j].style.display = (lang==="fr") ? "" : "none";
+
+      var ben = document.getElementById("btn-en");
+      var bfr = document.getElementById("btn-fr");
+      if (ben && bfr){
+        ben.classList.toggle("active", lang==="en");
+        bfr.classList.toggle("active", lang==="fr");
+      }
+      try{ localStorage.setItem("ri_lang", lang); } catch(e){}
+    }
+
+    (function initLang(){
+      var saved = null;
+      try{ saved = localStorage.getItem("ri_lang"); } catch(e){}
+      var nav = (navigator.language || "en").toLowerCase();
+      var initial = saved || (nav.indexOf("fr")===0 ? "fr" : "en");
+      setLang(initial);
+    })();
+  </script>
+</body>
+</html>
