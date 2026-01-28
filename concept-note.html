@@ -1,196 +1,135 @@
-<!-- concept-note.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Concept Note - RealityIntegrity.com</title>
-  <meta name="description" content="Concept note documenting Reality Integrity as a cross-sector trust capability across synthetic media, sensors, logs, and automated decisions." />
-  <meta name="robots" content="index,follow" />
+
+  <title>RealityIntegrity.com - Concept Note</title>
+  <meta name="description" content="Concept Note - RealityIntegrity.com. Vendor-neutral reference for an emerging trust capability: preserving and verifying the integrity of reality signals and representations across media, sensors, logs and automated decisions." />
 
   <link rel="canonical" href="https://www.realityintegrity.com/concept-note.html" />
+  <link rel="alternate" href="https://www.realityintegrity.com/concept-note.html" hreflang="en" />
+  <link rel="alternate" href="https://www.realityintegrity.com/concept-note.html" hreflang="x-default" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Concept Note - Reality Integrity" />
-  <meta property="og:description" content="Reality Integrity as a cross-sector trust capability across synthetic media, sensors, logs, and automated decisions." />
+  <meta property="og:title" content="RealityIntegrity.com - Concept Note" />
+  <meta property="og:description" content="Concept Note describing Reality Integrity as a cross-sector trust capability: definitions, scope, standards landscape, and governance drivers." />
   <meta property="og:url" content="https://www.realityintegrity.com/concept-note.html" />
-  <meta property="og:image" content="https://www.realityintegrity.com/og.jpg.png" />
+  <meta property="og:image" content="https://www.realityintegrity.com/og.jpg" />
+  <meta property="og:image:alt" content="RealityIntegrity.com - Concept Note" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.realityintegrity.com/og.jpg" />
 
   <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <style>
     :root{
-      --bg:#071022;
-      --card:#0b1830;
-      --text:#e9eef9;
-      --muted:#a9b7d6;
-      --accent:#66f0ff;
-      --line:rgba(255,255,255,.10);
-      --shadow: 0 16px 50px rgba(0,0,0,.40);
-      --radius: 16px;
-      --max: 980px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      --bg:#020815; --card:#081120; --muted:#8791b0; --text:#e8eefc;
+      --accent:#7fd0ff; --chip:#101b34; --shadow:0 10px 30px rgba(0,0,0,.45); --radius:18px;
     }
-    body{
-      margin:0; font-family:var(--sans); color:var(--text);
-      background: radial-gradient(1200px 800px at 20% 0%, rgba(102,240,255,.08), transparent 60%),
-                  radial-gradient(1200px 800px at 90% 30%, rgba(133,113,255,.08), transparent 55%),
-                  var(--bg);
-    }
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 44px;}
-    a{color:inherit;}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between; gap:16px;
-      padding:14px 16px; border:1px solid var(--line); border-radius:var(--radius);
-      background: rgba(255,255,255,.03); box-shadow: var(--shadow);
-      position:sticky; top:12px; backdrop-filter: blur(8px);
-    }
-    .badge{
-      display:inline-block; font-family:var(--mono); font-size:12px; color:var(--muted);
-      border:1px solid var(--line); padding:6px 10px; border-radius:999px; background: rgba(0,0,0,.14);
-    }
-    .btn{
-      cursor:pointer; border:1px solid var(--line); background: rgba(0,0,0,.14);
-      color:var(--text); padding:10px 12px; border-radius:12px; font-weight:650; text-decoration:none;
-      display:inline-flex; align-items:center; gap:8px;
-    }
-    .btn:hover{border-color: rgba(102,240,255,.35); background: rgba(102,240,255,.06);}
-    .card{
-      margin-top:18px; border:1px solid var(--line); border-radius:var(--radius);
-      background: rgba(255,255,255,.03); box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .inner{padding:22px 18px;}
-    .section-tag{
-      display:inline-block; font-family:var(--mono); font-size:12px; color:var(--muted);
-      border:1px solid var(--line); padding:6px 10px; border-radius:999px; background: rgba(0,0,0,.14);
-      margin-bottom:14px;
-    }
-    h1{margin:0 0 8px; font-size:30px; letter-spacing:-.3px;}
-    h2{margin:18px 0 8px; font-size:18px;}
-    p{margin:10px 0; line-height:1.60; color: rgba(233,238,249,.95);}
-    ul{margin:10px 0 0 20px; color: rgba(233,238,249,.95);}
-    li{margin:8px 0; line-height:1.55;}
-    .muted{color:var(--muted);}
-    .rule{height:1px; background: var(--line); margin:18px 0;}
-    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
-    .chip{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 10px; border:1px solid var(--line); border-radius:999px;
-      background: rgba(0,0,0,.14); text-decoration:none; font-family:var(--mono); font-size:12px;
-    }
-    .chip:hover{border-color: rgba(102,240,255,.35); background: rgba(102,240,255,.06);}
-    .foot{
-      margin-top:18px; font-size:12.5px; color:var(--muted); line-height:1.55;
-      border:1px solid var(--line); border-radius: var(--radius); padding:14px 16px; background: rgba(0,0,0,.12);
-    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+      font:15px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px}
+    .card{background:var(--card);border:1px solid #1d2946;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    h1{margin:0 0 8px;font-size:34px;letter-spacing:.2px}
+    h2{margin:18px 0 8px;font-size:18px}
+    ul{margin:10px 0 0 20px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 14px;border-radius:12px;
+      border:1px solid #1d2946;background:var(--chip);color:var(--text);text-decoration:none;font-weight:700}
+    .btn.primary{background:var(--accent);color:#020815;border-color:transparent}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+    .small{font-size:13px}
+    .hr{height:1px;background:#16213a;border:0;margin:16px 0}
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <div>
-        <a href="/" style="text-decoration:none; font-weight:700;">RealityIntegrity.com</a>
-        <span class="badge" style="margin-left:10px;">Concept Note</span>
-      </div>
-      <a class="btn" href="/">Back to home</a>
+    <div class="top">
+      <a class="btn" href="/">← Back</a>
+      <a class="btn primary" href="mailto:contact@realityintegrity.com">Contact</a>
     </div>
 
     <section class="card">
-      <div class="inner">
-        <div class="section-tag">Concept Note (EN)</div>
-        <h1>Reality Integrity as a cross-sector trust capability</h1>
-        <p>
-          RealityIntegrity.com is an independent, vendor-neutral reference describing an emerging trust capability:
-          preserving and verifying the integrity of reality signals and representations across synthetic media, sensors, logs, and automated decisions.
-          The objective is to clarify definitions, map standards and policy drivers, and document implementation considerations without promoting any single vendor or solution.
-        </p>
+      <h1>Concept Note - Reality Integrity</h1>
+      <p class="muted">
+        RealityIntegrity.com is an independent, vendor-neutral reference describing an emerging trust capability:
+        preserving and verifying the integrity of reality signals and representations across synthetic media, sensors, logs, and automated decisions.
+        The objective is to clarify definitions, map standards and regulatory drivers, and document implementation considerations without promoting any vendor or solution.
+      </p>
 
-        <div class="rule"></div>
+      <hr class="hr" />
 
-        <h2>1. Problem statement</h2>
-        <p>
-          Synthetic generation and manipulation reduce the reliability of audiovisual evidence and digital representations.
-          At scale, detection becomes a defensive “cat-and-mouse” approach. Organizations require proactive provenance and disclosure mechanisms,
-          aligned with governance and policy, so that critical records can withstand audit, dispute, and third-party review.
-        </p>
+      <h2>1) Problem statement</h2>
+      <p class="muted">
+        Synthetic generation and manipulation reduce the reliability of audiovisual evidence and operational representations.
+        At scale, detection alone becomes a defensive approach. Organisations need proactive provenance and disclosure mechanisms, aligned with governance, policy and risk management.
+      </p>
 
-        <h2>2. Definition and scope</h2>
-        <p>
-          Reality integrity refers to the integrity of a “reality object” across its lifecycle:
-        </p>
-        <ul>
-          <li>capture or creation (human, device, model),</li>
-          <li>transformations (editing, compression, synthesis),</li>
-          <li>distribution and storage,</li>
-          <li>consumption for decisions (human review, automated actions).</li>
-        </ul>
-        <p class="muted">
-          Integrity means traceable and disclosed transformations and verifiable provenance where available. Lack of provenance does not automatically imply falsehood; it implies reduced verifiability.
-        </p>
+      <h2>2) Definition and scope</h2>
+      <p class="muted">
+        Reality integrity refers to the integrity of a “reality object” across its lifecycle:
+      </p>
+      <ul class="muted">
+        <li>capture or creation (human, device, model),</li>
+        <li>transformations (editing, compression, synthesis),</li>
+        <li>distribution and storage,</li>
+        <li>consumption for decisions (human review, automated actions).</li>
+      </ul>
+      <p class="muted">
+        Integrity means traceable and disclosed transformations, and verifiable provenance where available.
+        Lack of provenance does not automatically imply falsehood; it implies reduced verifiability.
+      </p>
 
-        <h2>3. Governance drivers</h2>
-        <p>
-          Public initiatives increasingly point to transparency and traceability of AI-generated or manipulated content, as well as institutional principles for “information integrity”.
-          These drivers influence procurement language, compliance expectations, and the evidence organizations are expected to retain.
-        </p>
+      <h2>3) Governance drivers</h2>
+      <p class="muted">
+        Policy and institutional frameworks increasingly treat integrity as a prerequisite for trust at scale.
+        Regulatory trajectories on transparency for AI-generated or manipulated content, plus global principles on information integrity, reinforce the need for durable governance language above vendors and platforms.
+      </p>
 
-        <h2>4. Standards landscape</h2>
-        <p>
-          C2PA represents a key provenance standard for Content Credentials. The ecosystem is progressing through conformance and governance mechanisms that enable operational deployment.
-          Parallel guidance documents frame Content Credentials as a practical mechanism to strengthen multimedia integrity and support investigative and forensics workflows.
-        </p>
+      <h2>4) Standards landscape</h2>
+      <p class="muted">
+        C2PA represents a key provenance standard for Content Credentials. The ecosystem is moving from specification to operational governance through conformance and trust lists, enabling scalable trust infrastructure and ecosystem interoperability.
+      </p>
 
-        <h2>5. Practical taxonomy</h2>
-        <p>Reality integrity spans multiple mechanisms:</p>
-        <ul>
-          <li>disclosure and labeling (policy obligations),</li>
-          <li>provenance metadata and credentials,</li>
-          <li>trust lists and certificate policies,</li>
-          <li>watermarking approaches,</li>
-          <li>detection methods (supporting, not sufficient alone),</li>
-          <li>lifecycle preservation and durability of provenance.</li>
-        </ul>
+      <h2>5) Taxonomy (non-endorsement)</h2>
+      <p class="muted">
+        Reality integrity spans multiple mechanisms:
+      </p>
+      <ul class="muted">
+        <li>disclosure and labelling (policy obligations),</li>
+        <li>provenance metadata and credentials,</li>
+        <li>trust lists and certificate policies,</li>
+        <li>watermarking approaches,</li>
+        <li>detection methods (supporting, not sufficient alone),</li>
+        <li>lifecycle preservation and durability of provenance.</li>
+      </ul>
 
-        <h2>6. Non-endorsement and legal disclaimer</h2>
-        <p>
-          RealityIntegrity.com is not a standards body, certification authority, regulator, or legal advisor.
-          References to standards, public sources, or vendors are informational and do not imply endorsement.
-          The site provides no certification and no regulated assurance services.
-        </p>
+      <h2>6) Non-endorsement and legal disclaimer</h2>
+      <p class="muted">
+        RealityIntegrity.com is not a standards body, certification authority, regulator, or legal advisor.
+        References to standards, public sources, or vendors are informational and do not imply endorsement.
+      </p>
 
-        <h2>7. Why the domain matters</h2>
-        <p>
-          As integrity becomes a prerequisite for trust, compliance, and evidence, organizations need neutral vocabulary and a reference point above solutions.
-          “Reality Integrity” names the capability at a level suitable for coalitions, public-private initiatives, cross-industry governance, and institutional adoption.
-        </p>
+      <h2>7) Why the domain matters (asset logic)</h2>
+      <p class="muted">
+        When integrity becomes a non-optional capability across industries, organisations need a neutral vocabulary and reference point.
+        “Reality integrity” names the capability at a level above products, making the domain suitable for coalitions, public-private initiatives, cross-industry governance, or platform-scale trust and safety programs.
+      </p>
 
-        <div class="rule"></div>
+      <hr class="hr" />
 
-        <h2>References</h2>
-        <div class="chips">
-          <a class="chip" href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">EU: code of practice (marking and labelling)</a>
-          <a class="chip" href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener">EU AI Act: Article 50 (transparency)</a>
-          <a class="chip" href="https://c2pa.org/conformance/" target="_blank" rel="noopener">C2PA: conformance program</a>
-          <a class="chip" href="https://media.defense.gov/2025/Jan/29/2003634788/-1/-1/0/CSI-CONTENT-CREDENTIALS.PDF" target="_blank" rel="noopener">Guidance: Content Credentials (PDF)</a>
-          <a class="chip" href="https://www.esteri.it/wp-content/uploads/2024/06/un-global-principles-for-information-integrity-en.pdf" target="_blank" rel="noopener">UN: principles (PDF)</a>
-        </div>
-
-        <div class="rule"></div>
-
-        <p>
-          For institutional inquiries, partnerships, or acquisition discussions:
-          <a href="mailto:contact@realityintegrity.com">contact@realityintegrity.com</a>
-        </p>
-      </div>
+      <p class="muted small">
+        Disclaimer: independent, vendor-neutral reference. No certification. No legal advice. No regulated assurance services. No endorsement. No affiliation with any authority, standards body, or vendor.
+        Contact: <a href="mailto:contact@realityintegrity.com">contact@realityintegrity.com</a>
+      </p>
     </section>
-
-    <div class="foot">
-      <strong>Disclaimer.</strong> Independent informational reference. No certification. No legal advice. No regulated assurance services. No affiliation with regulators, standards bodies, or vendors. No endorsement implied.
-    </div>
   </div>
 </body>
 </html>
